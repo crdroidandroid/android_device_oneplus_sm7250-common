@@ -33,6 +33,11 @@ persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineag
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.oneplus.camera
 ro.opcamera.support=true
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.oneplus.camera
+persist.camera.eis.enable=1
+persist.camera.is_mode=4
+persist.vendor.camera.oissr.debug=1
+vendor.debug.camera.eisv2enable=1
+vendor.debug.camera.eisv3enable=1
 
 # Charger
 ro.charger.disable_init_blank=true
