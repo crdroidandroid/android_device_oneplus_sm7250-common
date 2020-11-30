@@ -119,6 +119,11 @@ sys.fflag.override.settings_bluetooth_hearing_aid=true
 # Camera
 vendor.arcsoft.sn_isHardCopy=0
 vendor.camera.algo.jpeghwencode=1
+persist.camera.mct.debug=0
+persist.camera.iface.logs=0
+persist.camera.imglib.logs=0
+persist.camera.isp.debug=0
+persist.camera.sensor.debug=0
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
