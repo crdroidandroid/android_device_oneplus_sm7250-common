@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
-    $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
+    $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides_qti.xml
 
 # Device Settings
 PRODUCT_PACKAGES += \
@@ -277,6 +277,9 @@ PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_lito \
     vendor.oneplus.fingerprint.extension@1.0 \
     vendor.oneplus.hardware.display@1.0
+
+# FOD
+EXTRA_FOD_ANIMATIONS := true
 
 # GPS
 PRODUCT_COPY_FILES += \
