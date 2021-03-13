@@ -539,9 +539,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.late.sf.duration=10500000 \
     debug.sf.late.app.duration=20500000 \
     debug.sf.early.sf.duration=16000000 \
-    debug.sf.early.app.duration=16500000 \
+    debug.sf.early.app.duration=33500000 \
     debug.sf.earlyGl.sf.duration=13500000 \
-    debug.sf.earlyGl.app.duration=21000000
+    debug.sf.earlyGl.app.duration=38000000
 
 # Disable Rescue Party on userdebug & eng build
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
