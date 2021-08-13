@@ -345,4 +345,7 @@
     <!-- Default fod pressed color -->
     <integer name="config_fod_pressed_color">4</integer>
 
+    <!-- Whether to show settings for hiding notch fill -->
+    <bool name="config_showHideNotchSettings">true</bool>
+
 </resources>
