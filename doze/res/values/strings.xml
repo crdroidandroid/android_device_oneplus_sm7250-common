@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD:overlay/packages/apps/Settings/res/values/dimens.xml
 <!-- Copyright (C) 2009 The Android Open Source Project
+=======
+<!--
+     Copyright (C) 2018 The LineageOS Project
+>>>>>>> 08c8107... hardware/oneplus: doze: Adapt to S style:doze/res/values/strings.xml
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,7 +19,12 @@
      limitations under the License.
 -->
 <resources>
+<<<<<<< HEAD:overlay/packages/apps/Settings/res/values/dimens.xml
     <!-- Fingerprint -->
     <dimen name="fingerprint_dot_radius">8dp</dimen>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">80%</item>
+=======
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Use ambient display</string>
+>>>>>>> 08c8107... hardware/oneplus: doze: Adapt to S style:doze/res/values/strings.xml
 </resources>
