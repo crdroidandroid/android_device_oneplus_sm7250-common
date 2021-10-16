@@ -42,6 +42,9 @@ vendor.debug.camera.eisv3enable=1
 # Charger
 ro.charger.disable_init_blank=true
 
+# Dexopt
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.latch_unsignaled=0
