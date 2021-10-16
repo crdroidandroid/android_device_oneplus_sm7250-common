@@ -23,6 +23,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Charger
 ro.charger.disable_init_blank=true
 
+# Dexopt
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
