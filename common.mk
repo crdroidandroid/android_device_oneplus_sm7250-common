@@ -274,9 +274,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.oneplus_lito \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_lito \
-    vendor.oneplus.fingerprint.extension@1.0 \
-    vendor.oneplus.hardware.display@1.0
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus_lito \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # FOD
 EXTRA_FOD_ANIMATIONS := true

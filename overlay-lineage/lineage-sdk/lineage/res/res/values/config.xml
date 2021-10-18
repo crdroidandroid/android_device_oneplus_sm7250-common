@@ -66,4 +66,10 @@
         <item>restart_bootloader</item>
         <item>restart_fastboot</item>
      </string-array>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM 
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
 </resources>
