@@ -266,6 +266,7 @@ sys.fflag.override.settings_seamless_transfer=true
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
 ro.config.dha_tunnable=1
+persist.sys.binary_xml=false
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
