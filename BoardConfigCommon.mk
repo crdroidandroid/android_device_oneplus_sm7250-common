@@ -1,4 +1,3 @@
-
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -125,9 +124,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
-SOONG_CONFIG_NAMESPACES += ONEPLUS_LITO_FOD
-SOONG_CONFIG_ONEPLUS_LITO_FOD := POS_X POS_Y SIZE
-TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.oneplus_lito
+TARGET_SURFACEFLINGER_UDFPS_LIB  := //$(COMMON_PATH):libudfps_extension.oneplus_lito
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
