@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-#include <compositionengine/FodExtension.h>
+#include <compositionengine/UdfpsExtension.h>
+#include <vendor/oneplus/hardware/display/1.0/IOneplusDisplay.h>
 
-uint32_t getFodZOrder(uint32_t z, bool touched) {
+uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
     return touched ? 0xfc8 : z;
 }
 
-uint64_t getFodUsageBits(uint64_t usageBits, bool) {
+uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) {
     return usageBits;
 }
