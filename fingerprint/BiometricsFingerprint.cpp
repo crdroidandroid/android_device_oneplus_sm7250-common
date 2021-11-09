@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service"
 
 #include <hardware/hw_auth_token.h>
 
@@ -30,7 +30,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -62,6 +62,18 @@ BiometricsFingerprint::~BiometricsFingerprint() {
         return;
     }
     mDevice = nullptr;
+}
+
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
+    return true;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
 }
 
 Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
@@ -360,7 +372,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
 }
 
 } // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
