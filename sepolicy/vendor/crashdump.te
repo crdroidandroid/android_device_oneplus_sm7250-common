@@ -1,0 +1,4 @@
+allow crash_dump ctl_default_prop:file { getattr map open };
+allow crash_dump device_config_runtime_native_prop:file { getattr map open };
+allow crash_dump hwservicemanager_prop:file { getattr map open };
+allow crash_dump vendor_default_prop:file { getattr map open };

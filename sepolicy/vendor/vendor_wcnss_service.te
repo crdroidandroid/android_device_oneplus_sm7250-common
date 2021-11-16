@@ -3,3 +3,5 @@ r_dir_file(vendor_wcnss_service, sysfs_project_info)
 
 # Allow vendor_wcnss_service to get vendor_oem_wifi_prop
 get_prop(vendor_wcnss_service, vendor_oem_wifi_prop)
+
+allow vendor_wcnss_service property_socket:sock_file write;
