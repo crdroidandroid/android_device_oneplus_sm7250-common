@@ -11,7 +11,8 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.DeviceSettings">
+	xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.DeviceSettings"
+	android.title="@string/device_title">
 
     <PreferenceCategory
         android:key="graphics"
@@ -110,7 +111,6 @@
 
         <org.lineageos.device.DeviceSettings.CustomSeekBarPreference
             android:key="vib_strength"
-            android:icon="@drawable/ic_intensity_icon"
             android:title="@string/vib_strength_title_head"
             android:summary="@string/vib_strength_summary_head"
             android:persistent="true"
