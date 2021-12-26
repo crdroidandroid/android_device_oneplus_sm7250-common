@@ -220,6 +220,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 ro.vendor.perf-hal.ver=2.2
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
