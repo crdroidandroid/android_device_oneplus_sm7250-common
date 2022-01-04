@@ -466,7 +466,6 @@ vendor/lib64/libkeymasterutils.so|572e22dd69debd0f64c5df9f723276f0184e36cc
 vendor/lib64/libqtikeymaster4.so|b283d2fc27d5b8bee35146465e9b9dc978fec908
 
 # Listen - from LA.UM.9.12.r1-13400.02-SMxx50.QSSI12.0
-vendor/lib/hw/sound_trigger.primary.lito.so|eea1b9ecc036a7db729f5e24b918aaa822404feb
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
 vendor/lib/libcapiv2svacnn.so|c897fbba664fcb0ea1951d3220d8db54ae0d7995
 vendor/lib/libcapiv2vop.so|1cceaefcc1ca55de5bc932a846091e6702c5d508
