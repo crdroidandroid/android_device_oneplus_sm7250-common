@@ -1,3 +1,0 @@
-# Allow hal_secure_element_default to get vendor_nfc_prop
-get_prop(hal_secure_element_default, vendor_nfc_prop)
-
