@@ -433,6 +433,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.1.vendor \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
