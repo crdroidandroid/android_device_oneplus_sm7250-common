@@ -1,3 +1,16 @@
+# ART
+dalvik.vm.image-dex2oat-filter=quicken 
+dalvik.vm.image-dex2oat-threads=8 
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.dex2oat-filter=quicken 
+dalvik.vm.dex2oat-threads=8 
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
+# Async MTE on system_server
+arm64.memtag.process.system_server=off
+
 # Audio
 audio.offload.min.duration.secs=30
 persist.vendor.audio.hac.enable=false
@@ -23,7 +36,7 @@ ro.charger.disable_init_blank=true
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 persist.vendor.color.matrix=2
 
 # CNE
@@ -44,6 +57,9 @@ persist.dbg.wfc_avail_ovr=1
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
 
+# IORap I/O Prefetching
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
@@ -60,6 +76,7 @@ ro.vendor.qti.core_ctl_min_cpu=2
 
 # Radio
 ro.telephony.default_network=33,33
+persist.sys.fflag.override.settings_provider_model=false
 
 # Touchscreen
 persist.vendor.qti.inputopts.enable=true
@@ -74,6 +91,3 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
-
-# Zygote
-persist.device_config.runtime_native.usap_pool_enabled=true

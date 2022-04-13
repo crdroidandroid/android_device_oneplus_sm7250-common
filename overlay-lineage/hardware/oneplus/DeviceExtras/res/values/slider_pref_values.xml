@@ -25,9 +25,9 @@
 
     <!-- Sys vibration integers (default, min, max) -->
     <integer-array name="vibrator_strength_preference_array">
-        <item>3</item>
+        <item>2</item>
         <item>0</item>
-        <item>3</item>
+        <item>2</item>
     </integer-array>
     <integer name="vibrator_strength_preference_interval">1</integer>
 
