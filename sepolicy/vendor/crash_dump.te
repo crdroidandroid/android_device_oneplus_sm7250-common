@@ -1,0 +1,3 @@
+allow crash_dump zram_control_prop:file { map open getattr };
+allow crash_dump zram_config_prop:file { map open getattr };
+allow crash_dump wifi_prop:file { open };
