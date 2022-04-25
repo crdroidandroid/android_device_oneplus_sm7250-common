@@ -43,11 +43,13 @@ for index, line in enumerate(lines):
         line = line.split('|')[0]
 
         if line[0] == '-':
-            file = open('%s/%s' % (vendorPath, line[1:]), 'rb').read()
+            file = '%s/%s' % (vendorPath, line[1:])
         else:
-            file = open('%s/%s' % (vendorPath, line), 'rb').read()
+            file = '%s/%s' % (vendorPath, line)
+        file = file.split(';')[0]
 
-        hash = sha1(file).hexdigest()
+        with open(file, 'rb') as fobj:
+            hash = sha1(fobj.read()).hexdigest()
         lines[index] = '%s|%s\n' % (line, hash)
 
 with open('proprietary-files.txt', 'w') as file:
