@@ -16,6 +16,9 @@ audio.offload.min.duration.secs=30
 persist.vendor.audio.hac.enable=false
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
+# Atfwd client
+persist.vendor.radio.atfwd.start=true
+
 # Bluetooth
 persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
@@ -85,6 +88,7 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Radio
 ro.telephony.default_network=33,33
 persist.sys.fflag.override.settings_provider_model=false
+telephony.lteOnCdmaDevice=1
 
 # Touchscreen
 persist.vendor.qti.inputopts.enable=true
