@@ -361,18 +361,13 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    init.qti.media.sh \
-    libOmxAacEnc \
-    libOmxAmrEnc \
+    libmm-omxcore \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw \
-    libstagefright_omx.vendor
+    libOmxVdec \
+    libOmxVdecHevc \
+    libOmxVenc \
+    libc2dcolorconvert
 
 # OnePlus Apps
 PRODUCT_PACKAGES += \
