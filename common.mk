@@ -30,6 +30,9 @@ $(call inherit-product, $(LOCAL_PATH)/interfaces.mk)
 # OnePlus Camera
 $(call inherit-product-if-exists, vendor/oneplus/apps/avicii/config.mk)
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
