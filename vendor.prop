@@ -130,10 +130,6 @@ persist.camera.sensor.debug=0
 log.tag.CHIUSECASE=ERROR
 persist.vendor.camera.logInfoMask=false
 
-# Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM7250
-
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -261,6 +257,10 @@ persist.vendor.sensors.allow_non_default_discovery=true
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
+
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7250
 
 # Transcoding related property.
 debug.media.transcoding.codec_max_operating_rate_720P=480
