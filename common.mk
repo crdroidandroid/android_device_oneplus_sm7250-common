@@ -36,8 +36,18 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCommon \
+    FrameworksResOverlayCommon \
+    OnePlusCameraOverlay \
+    OnePlusGalleryOverlay \
+    SettingsOverlayCommon \
+    SettingsProviderOverlayCommon \
+    SystemUIOverlayCommon \
+    TelephonyResCommon \
+    WifiResCommon \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -370,11 +380,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libc2dcolorconvert
 
-# OnePlus Apps
-PRODUCT_PACKAGES += \
-    OnePlusCameraOverlay \
-    OnePlusGalleryOverlay
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -490,7 +495,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     wifi-mac-generator \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 

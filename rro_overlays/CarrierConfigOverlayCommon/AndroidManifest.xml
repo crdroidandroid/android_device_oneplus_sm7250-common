@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.carrierconfig.overlay.common"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="com.android.carrierconfig" android:priority="0" android:isStatic="true" />
+
+    <application android:label="CarrierConfigOverlayConfig" android:hasCode="false"/>
+</manifest>
